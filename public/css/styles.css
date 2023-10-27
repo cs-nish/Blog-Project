@@ -140,8 +140,8 @@ header {
 }
 
 header img {
-  width: 100px;
-  margin-right: 40px;
+  height: 40px;
+  width: 140px;
 }
 
 header h2 {
