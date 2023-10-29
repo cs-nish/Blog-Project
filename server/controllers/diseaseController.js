@@ -74,6 +74,10 @@ exports.renderFirstAid = (req, res) => {
   res.render("firstAid", { user: res.locals.user });
 };
 
+exports.renderContact = (req, res) => {
+  res.render("contact", { user: res.locals.user });
+};
+
 exports.searchDisease = async (req, res) => {
   try {
     let searchTerm = req.body.searchTerm;

@@ -13,4 +13,6 @@ router.post("/calculateBMI", diseaseController.calculateBMI);
 
 router.get("/firstAid", diseaseController.renderFirstAid);
 
+router.get("/contact", diseaseController.renderContact);
+
 module.exports = router;
