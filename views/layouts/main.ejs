@@ -31,12 +31,21 @@
         <a
           href="/"
           class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
-          style="font-weight: bold; text-transform: uppercase; font-size: 24px"
+          style="
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 24px;
+            padding-right: 0;
+            margin-right: 0;
+          "
         >
           Remedy Nest
         </a>
 
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <ul
+          class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0"
+          style="text-transform: uppercase"
+        >
           <li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
           <li>
             <a href="/firstaid" class="nav-link px-2 link-secondary"
@@ -60,15 +69,15 @@
           <% } %>
         </ul>
 
-        <div class="col-md-1 text-end">
+        <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
           <% if (user) { %>
-          <li class="btn btn-outline-dark">
+          <li class="btn btn-outline-primary">
             <a href="/logout" class="nav-link px-2 link-secondary">Logout</a>
           </li>
           <% } %>
         </div>
 
-        <div class="col-md-3 text-end">
+        <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
           <form class="search-form" method="POST" action="/search">
             <input
               type="search"
